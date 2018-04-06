@@ -1,0 +1,171 @@
+<body>
+  <div class='form'>
+    <div class='page-header'>
+      <h1 align='center'>How much do you know about Baby Krell?!</h1>
+      <h4 align='center'>$2 buy in. winner takes all. venmo me @hanner_moser to enter.</h4>
+    </div>
+
+    <% @guess=Guess.new %>
+    <%= form_for(@guess, :html=>{:class=>'form-horizontal'}) do |f| %>
+      <div class='label'>
+        <%=f.label :sex %>
+      </div>
+      <div class='radio'>
+        <div class='radio-inline'>
+          <%= f.radio_button :sex, 'female' %> 
+          <%= f.label :sex, 'Female', :value => 'female' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :sex, 'male' %> 
+          <%= f.label :sex, 'Male', :value => 'male' %>
+        </div>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :eye_color %>
+      </div>
+      <div class='radio'>
+        <div class='radio-inline'>
+          <%= f.radio_button :eye_color, 'green' %> 
+          <%= f.label :eye_color, 'Green', :value => 'green' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :eye_color, 'brown' %> 
+          <%= f.label :eye_color, 'Brown', :value => 'brown' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :eye_color, 'blue' %> 
+          <%= f.label :eye_color, 'Blue', :value => 'blue' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :eye_color, 'gray' %> 
+          <%= f.label :eye_color, 'Gray', :value => 'gray' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :eye_color, 'hazel' %> 
+          <%= f.label :eye_color, 'Hazel', :value => 'hazel' %>
+        </div>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :weight %>
+      </div> 
+      <div class='radio'>
+         <div class='radio-inline'>
+          <%= f.radio_button :weight, '5' %> 
+          <%= f.label :weight, '5lbs', :value => '5' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :weight, '6' %> 
+          <%= f.label :weight, '6lbs', :value => '6' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :weight, '7' %> 
+          <%= f.label :weight, '7lbs', :value => '7' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :weight, '8' %> 
+          <%= f.label :weight, '8lbs', :value => '8' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :weight, '9' %> 
+          <%= f.label :weight, '9lbs', :value => '9' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :weight, '10' %> 
+          <%= f.label :weight, '10lbs', :value => '10' %>
+        </div>
+      </div>
+      <br> 
+      <div class='label'>
+        <%=f.label :height %>
+      </div> 
+      <div class='radio'>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '16' %> 
+          <%= f.label :height, '16ins', :value => '16' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '17' %> 
+          <%= f.label :height, '17ins', :value => '17' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '18' %> 
+          <%= f.label :height, '18ins', :value => '18' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '19' %> 
+          <%= f.label :height, '19ins', :value => '19' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '20' %> 
+          <%= f.label :height, '20ins', :value => '20' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '21' %> 
+          <%= f.label :height, '21ins', :value => '21' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '22' %> 
+          <%= f.label :height, '22ins', :value => '22' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '23' %> 
+          <%= f.label :height, '23ins', :value => '23' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :height, '24' %> 
+          <%= f.label :height, '24ins', :value => '24' %>
+        </div>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :date %>
+      </div>  
+      <div>
+        <%=f.date_field :date %>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :time %>
+      </div>
+      <div class='radio'>
+        <div class='radio-inline'>
+          <%= f.radio_button :time, 'am' %> 
+          <%= f.label :time, 'Am', :value => 'am' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :time, 'pm' %> 
+          <%= f.label :time, 'Pm', :value => 'pm' %>
+        </div>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :species %>
+      </div>
+      <div class='radio'>
+        <div class='radio-inline'>
+          <%= f.radio_button :species, 'human baby' %> 
+          <%= f.label :species, 'Human Baby', :value => 'human baby' %>
+        </div>
+        <div class='radio-inline'>
+          <%= f.radio_button :species, 'pug baby' %> 
+          <%= f.label :species, 'Pug Baby', :value => 'pug baby' %>
+        </div>
+      </div>
+      <br>
+      <div class='label'>
+        <%=f.label :name, 'Your Name'%>
+      </div>
+        <div>
+          <%=f.text_field :name %>
+        </div>
+        <br>
+      <div style='padding: 20px 0px'>
+        <%= f.submit "Submit Guess", class: "btn btn-primary" %>
+      </div>
+    <%end%>
+  </div>
+</body>
+
+

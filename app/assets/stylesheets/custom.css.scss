@@ -1,0 +1,52 @@
+body { 
+  background-image: image-url('polkadots.jpg'); 
+  font-size: 20px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+.navbar .navbar-brand {
+	color: #FFF;
+}
+
+.navbar .navbar-brand:hover {
+	color: #81F7F3;
+}
+.form {
+	padding: 25px 50px 75px 100px;
+	text-align: center;
+}
+
+.pie-chart {
+	padding-bottom: 40px;
+}
+
+.label {
+	font-size: 24px;
+	color: #000000;
+}
+
+.radio {
+	padding-right: 20px;
+}
+
+.radio label {
+	padding-left: 0px !important;
+
+}
+
+.slider {
+	padding-right: 250px;
+	padding-left: 250px;
+}
+
+.btn-primary {
+	background-color: #81F7F3;
+	border-color: #81F7F3;
+	color: #FFFFFF;
+}
+
+.btn-primary:hover {
+	background-color: #58FAF4;
+	border-color: #58FAF4;
+}

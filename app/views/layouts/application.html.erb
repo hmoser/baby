@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baby Krell</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<nav class='navbar navbar-inverse navbar-static-top'>
+  		<div class='container'>
+  			<div class='navbar-header'>
+  				<%= link_to "make a guess", 
+  					guesses_path, class:'navbar-brand' %>
+  			</div>
+  			<div class='navbar-header'>
+  				<%= link_to "what does everyone think?!", 
+  					all_guesses_path, class:'navbar-brand' %>
+  			</div>
+  		</div>
+  	</nav>
+  </body>
+</html>
+<%= yield %>
+

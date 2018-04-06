@@ -1,0 +1,35 @@
+<body>
+	<div class='page-header'>
+      <h1 align='center'>Here's what everyone thinks about Baby Krell!</h1>
+    </div>
+    <div class='col-md-4 pie-chart'>
+    	<h3 align="center">Sex</h3>
+		<%= pie_chart Guess.group(:sex).count, 
+			colors: ["#81F7F3", "#58FAAC"] %>
+	</div>
+	<div class='col-md-4 pie-chart'>
+		<h3 align="center">Eye Color</h3>	
+		<%= pie_chart Guess.group(:eye_color).count, 
+			colors: ["#F781F3", "#58FAAC", "#81F7F3", "#BE81F7", "#F3F781"] %>
+	</div>
+	<div class='col-md-4 pie-chart'>
+		<h3 align="center">Weight</h3>
+		<%= pie_chart Guess.group(:weight).count,
+			colors: ["#BE81F7", "#58FAAC", "#F3F781", "#F781F3", "#81F7F3", "#FAAC58"] %>
+	</div>
+	<div class='col-md-4 pie-chart'>
+		<h3 align="center">Height</h3>
+		<%= pie_chart Guess.group(:height).count,
+			colors: ["#FAAC58", "#81F7F3", "#F781F3", "#F3F781", "#58FAAC", "#BE81F7", "#F78181", "819FF7", "#F781BE"] %>
+	</div>
+	<div class='col-md-4 pie-chart'>
+		<h3 align="center">Date</h3>
+		<%= pie_chart Guess.group(:date).count,
+			colors: ["#F781BE", "#819FF7", "#F78181", "#BE81F7", "#58FAAC", "#F3F781", "#F781F3", "81F7F3", "#FAAC58"] %>
+	</div>
+	<div class='col-md-4 pie-chart'>
+		<h3 align="center">Species</h3>
+		<%= pie_chart Guess.group(:species).count,
+			colors: ["#81F7F3", "#BE81F7"] %>
+	</div>
+</body>
