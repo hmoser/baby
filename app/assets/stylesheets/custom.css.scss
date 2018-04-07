@@ -1,8 +1,16 @@
 body { 
-  background-image: image-url('polkadots.jpg'); 
   font-size: 20px;
   font-family: sans-serif;
   font-variant: small-caps;
+}
+
+.guess-bg {
+  background-image: image-url('polkadots.jpg');
+}
+
+.all-bg {
+background-image: image-url('white.jpg');
+	
 }
 
 .navbar .navbar-brand {
